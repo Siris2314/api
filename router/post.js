@@ -281,7 +281,7 @@ router.post("/chat", async function (req, res) {
       "Reply hazy, try again.",
       "No way, I'm gonna say my prefix."
       ].random());
-      if(!(bot.prefix)) reply = shuffle(["I don't have prefix, could you kindly remind my Master about this?", "I don't have a prefix settled on me.", "It's a shame that my master didn't really give me a prefix.", "I'm sorry, but I don't have any prefixes. Simply notify my master about this."]).random();
+      if(!(bot.prefix)) reply = shuffle(["I don't have prefix, could you kindly remind the Owner about this?", "I don't have a prefix settled on me.", "Shame the owner didn't really give me a prefix.", "I'm sorry, but I don't have any prefixes. Simply notify my owner about this."]).random();
     } else if(message.includesOf(["what", "wut"])) {
       reply = shuffle([
       `Prefix is an shortcut to access my command.`,
@@ -799,9 +799,9 @@ The sum of all characters in an embed structure must not exceed 6000 characters.
     .replace(/{{forfun}}/g, `gaming`)
     .replace(/{{forfun}}/g, `gaming`)
     .replace(/{{master}}/g, `${owner.username}#${owner.discriminator}`)
-    .replace(`great botmaster`, shuffle(["Master", "Ojiisan", "Onii-chan", "Otoosan"].random()))
+    .replace(`great botmaster`, shuffle(["Master", "Owner", "The Omipotent", "The almighty"].random()))
     .replace(`I'm designed to be a male chatbot. `, `\n${shuffle([bot.description].random())}\n`)
-    .replace(`your best chatbot forever.`, shuffle(["your slave, yamete.. uhhh. So,", "a Goddess `👑` .", `your personal companion.`].random()))
+    .replace(`your best chatbot forever.`, shuffle(["Appreciate The Compliment, You yourself are a fine user ,", "Many Thanks `👑` .", `your personal companion.`].random()))
     .replace(`I"m a chatbot.`, `${bot.description}`)
     .replace(`chatbot`, `${bot.description}`)
     .replace(`I'm using Netscape`, shuffle(["I'm using Discord Browser.", "I'm not using the same UID.", "I'm using Laptop."].random()))
